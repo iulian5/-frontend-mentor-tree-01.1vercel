@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+  background: url("./images/pattern-background-desktop.svg") no-repeat;
+  background-size: contain;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  border-radius: 15px;
+  background-color: white;
+  max-width: 500px;
+  box-shadow: rgba(56, 41, 224, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.container-text {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.paragraph {
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  max-width: 300px;
+}
+
+.plan {
+  width: 100%;
+  background-color: hsl(225, 100%, 98%);
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.text-plan {
+  margin-left: 20px;
+  min-width: max-content;
+}
+
+.text-plan span {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.text-plan p {
+  color: hsl(224, 23%, 55%);
+}
+
+.link-plan {
+  flex-grow: 1;
+  text-align: end;
+  width: 100%;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+
+.link-plan:active {
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 0.7);
+}
+
+.btn-check {
+  width: 100%;
+  padding: 15px 0;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(56, 41, 224, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
+}
+.btn-check:active {
+  background-color: hsla(245, 75%, 52%, 0.7);
+  cursor: pointer;
+}
+
+.cancel {
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  margin-top: 35px;
+  text-decoration: none;
+}
+
+.cancel:active {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    background: none;
+  }
+
+  .box {
+    margin: 0px 25px;
+  }
+
+  .container-text {
+    padding: 20px;
+  }
+}
